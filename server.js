@@ -10,11 +10,11 @@ var messages = ["Hello there.", "I'm sorry, I cannot take any requests at this t
 
 var getRandomMessage = messages[Math.floor(Math.random()*messages.length)];
 
-app.get("/", function(req, res) {
-  res.send(JSON.stringify({
-    message: getRandomMessage
-  }))
-});
+// app.get("/", function(req, res) {
+//   res.send(JSON.stringify({
+//     message: getRandomMessage
+//   }))
+// });
 
 app.options('/', function(req, res) {
   res.status(200).set({
